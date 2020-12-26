@@ -22,13 +22,24 @@ echo "</td></tr>";
 foreach ($tab as $cle => $val) {
   
 $somme = $val+$cle;
+$parite ="";
+
+
+
+      if ($somme%2 == 1){
+      $parite = "impair";
+      }
+     else{
+     $parite = "paire";
+      }
+
 
    
         echo "<tr>";
         echo "<td>".$cle."</td>";
         echo "<td>".$val."</td>";
         echo "<td>" .$somme."</td>";
-        
+        echo "<td>".$parite.  "</td>";
         echo "</tr>";
     
 }
