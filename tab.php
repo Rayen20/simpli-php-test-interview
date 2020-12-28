@@ -18,7 +18,10 @@ echo "</td><td colspan= \"1\">";
 echo "Paire / Impaire";
 echo "</td></tr>";
 
-  
+
+$size = sizeof($tab);
+
+if ($size != 0){
 foreach ($tab as $cle => $val) {
   
 $somme = $val+$cle;
@@ -44,4 +47,8 @@ $parite ="";
     
 }
 echo "</table>";
+}
+else{
+    echo "rien a afficher";  
+}
 ?>
